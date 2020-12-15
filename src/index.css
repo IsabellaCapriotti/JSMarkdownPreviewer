@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+
+}
+
+body {
+  margin: 0;
+  background-color: rgba(247, 232, 233, .3); 
+}
+
+.container{
+  display: flex;
+  flex-flow: column nowrap; 
+  align-items: center;
+  
+}
+
+.editor-header{
+  width: 40vw; 
+  height: 3vh;
+
+  margin-top: 3rem;
+  background-color: rgb(249, 202, 204);
+
+  text-align: left;
+}
+
+.header-text, .preview-text{
+  font-size: 1.2rem;
+  font-family: "Homenaje", sans-serif;
+  
+  margin-left: 2rem;
+}
+
+textarea{
+  font-family: "Inconsolata", monospace; 
+}
+
+textarea, .preview{
+  width: 40vw; 
+  height: 20vh; 
+
+  padding: .5rem;
+  border: 1rem inset rgb(249, 202, 204); 
+  border-top: none;
+
+
+  background-color: rgba(145, 143, 142, .1);
+
+  overflow-x: hidden;
+  overflow-y: auto; 
+  resize: none;
+
+}
+
+textarea:focus{
+  outline: none;
+}
+
+
+.preview-header{
+  margin-top: 5rem;
+
+  background-color: rgb(249, 202, 204);
+
+  width: 65vw;
+  height: 3vh;
+}
+
+.preview{
+  width: 65vw;
+  height: 55vh;
+}
